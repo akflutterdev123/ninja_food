@@ -7,6 +7,7 @@ import 'package:ninjaa/features/cart/cart_view.dart';
 import 'package:ninjaa/features/homepage/view/home_view.dart';
 import 'package:ninjaa/features/items_view/items_view.dart';
 import 'package:ninjaa/features/ninja_view/ninja_view.dart';
+import 'package:ninjaa/features/orders/order_details_view.dart';
 import 'package:ninjaa/utils/common_library.dart';
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -48,6 +49,12 @@ final goRouterProvider = Provider<GoRouter>((ref) {
                         path: cart,
                         name: cart,
                         builder: (context, state) => const CartView(),
+                      ),
+                      GoRoute(
+                        parentNavigatorKey: rootNavigatorKey,
+                        path: orderDetails,
+                        name: orderDetails,
+                        builder: (context, state) => const OrderDetailsView(),
                       ),
                     ]),
                 GoRoute(

@@ -2,6 +2,7 @@ const String route = 'route';
 const String homePage = 'homePage';
 const String itemsMenu = 'itemsMenu';
 const String cart = 'cart';
+const String orderDetails = 'orderDetails';
 const String ninjaAccount = 'ninjaAccount';
 const String motoMarket = 'motoMarket';
 const String giis = 'giis';
